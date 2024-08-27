@@ -23,7 +23,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={poppins.className}
+        suppressHydrationWarning={true}>
         <ReduxProvider>
           <div className="bg-gray-light">
             <div className="flex space-x-[30px] p-[30px] container mx-auto">
